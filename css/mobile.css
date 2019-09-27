@@ -1,0 +1,16 @@
+@media (max-width: 600px) { /*que cuanto el tama;o sea menor a los 600px le aplique lo que tengo en las llaves*/
+  .products{
+    display: inherit; /*para que las tarjetas lo muestre en vertical*/
+    height: auto; /*para que la altura pueda crecer de forma natural*/
+  }
+  .product{
+    margin-top: auto; /*para alinear los produtos y no quede uno sobre de otro*/
+  }
+  /*reducimo el padding xq es para una version mobile*/
+  .main_section{
+    padding: 4%;
+  }
+  .beneficios, .mentions{
+    display: inherit;
+  }
+}

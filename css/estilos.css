@@ -1,0 +1,157 @@
+/*
+#quitamos el body y el pading
+#flex ayuda a pasar los elementos de vertical a horizontal
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
+
+/*--------------Varialbes
+#todo lo que pongamos en root va a estar disponible para todas las clases de abajo*/
+:root{
+  --green-color: #7ACC2D;
+  --white-color: white;
+  --black-color: #313337;
+  /*tipografia*/
+  --normal: 12px;
+  /*espaciado*/
+  --space: 10px;
+  /*box shadow*/
+  --box: 0 0 1px #c1bcbc;
+}
+/*-------------Variables*/
+html,body{
+  padding: 0px;
+  margin: 0px;
+  font-size: var(--normal);
+  font-family: 'Open Sans', sans-serif;
+}
+
+nav{
+  display: flex;
+  background-color: var(--green-color);
+  padding: var(--space);
+  color: var(--white-color);
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  display: flex;
+}
+
+nav li {
+  padding-left: 20px;
+  list-style: none;
+}
+nav li a {
+  color: var(--black-color);
+  text-decoration: none;
+}
+nav li a:hover {
+  color: var(--white-color);
+}
+
+/*--------------------.main_section*/
+
+.main_section{
+  padding: 8%;
+  text-align: center;
+}
+
+.products{
+  background-image: url("../images/curve.png");
+  max-height: 50px;
+  background-size: cover;
+  background-position: center top;
+  padding: 20%;
+  display: flex;
+}
+.product{
+  padding: var(--space);
+  margin-top: -330px;
+}
+
+.product .content{
+  background-color: var(--white-color);
+  padding: 15px;
+  box-shadow: var(--box);
+}
+
+.image_content {
+  text-align: center;
+}
+
+.main_button{
+  width: 100%;
+  background-color: var(--green-color);
+  padding: var(--space);
+  font-size: 17px;
+  color: var(--white-color);
+  border: 0;
+  cursor: pointer;
+  border-radius: 2px;
+}
+
+.main_button:hover {
+  background-color: #5e9e22;
+}
+
+
+
+
+
+
+
+/*Clases de el reto*/
+.option{
+  display: flex;
+  background-color: var(--green-color);
+  padding: var(--space);
+  color: var(--white-color);
+  justify-content: space-between;
+  align-items: center;
+}
+.beneficios{
+  max-height: 50px;
+  background-size: cover;
+  background-position: center top;
+  padding: 10%;
+  display: flex;
+}
+.beneficio{
+  padding: 10px;
+}
+.content_beneficio{
+  background-color: var(--white-color);
+  padding: 15px;
+  text-align: center;
+
+}
+
+.text_beneficio{
+  text-align: justify;
+}
+.mentions{
+  max-height: 50px;
+  background-size: cover;
+  background-position: center top;
+  padding: 10%;
+  display: flex;
+}
+.mention{
+  padding: 10px;
+  margin-top: -170px;
+}
+.content_mention{
+  background-color: var(--white-color);
+  padding: 0px;
+  box-shadow: var(--box);
+}
+.text{
+  padding: 10px;
+}
+.mention_title
+{
+  padding: 8%;
+  text-align: center;
+}
